@@ -1,7 +1,7 @@
-#MONITO 
-This app helps you to choose the movie that you want to watch
+# MONITO 
+    This app helps you to choose the movie that you want to watch
 
-#Description
+# Description
 This application helps pople to find out upcoming movies, new releases and details of choosen movie. 
 This time I used React in typescript for creating Monito because it's most popular these days programming language and it's easy to use and helps you figure out how to make usefull application. 
 I used typescript because it helps us know exactly what type of variables we use.
@@ -19,7 +19,7 @@ Some of the features which are included in this app are:
  
  For UI framework i didn't use anything because I wanted to learn from scratch so I used SASS/SCSS
  
- #packages 
+ # packages 
  
     - offcanvas
     - nuke slider

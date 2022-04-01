@@ -6,7 +6,9 @@ import Search from "../../components/search/search";
 const PopularMovies: React.FC = () => {
   return (
     <div className="container">
-      <Sidebar className="container-sidebar" />
+      <div className="container-sidebar" >
+      <Sidebar/>
+      </div>
       <div className="container-poster">
         <Search />
       </div>

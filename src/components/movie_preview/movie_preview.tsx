@@ -20,12 +20,12 @@ const MoviePreview = (props: any): JSX.Element => {
   }, []);
 
   return (
-    <div>
+    <div className="slider-container">
       <Carousel autoplay={true} autoplayInterval={5000} wrapAround={true}>
         {movies.slice(0, 10).map((movie: MovieModel, index: number) => {
           return (
             <div key={index}>
-              <img
+              <img className="slider-img"
                 src={
                   movie?.poster_path !== null || movie?.poster_path !== ""
                     ? img_baseUrl + movie?.poster_path

@@ -46,18 +46,16 @@ const MovieDetail = () => {
     }
   }
   function movieIsFav(movie: MovieModel) {
-    const favMovies: any = JSON.parse(localStorage.getItem(FAV_MOVIES) || "[]");
+    const favMovies: any[] = JSON.parse(localStorage.getItem(FAV_MOVIES) || "[]");
     const favMoviesString = JSON.stringify(favMovies);
     if (favMoviesString !== "[]") {
       for (let i = 0; i < favMovies.length; i++) {
-        if (favMovies.every((item: { id: number }) => item.id !== movie.id)) {
+        if (favMovies.find((item: MovieModel) => item.id === movie.id)) {
           setIsFav(true);
         } else {
           setIsFav(false);
         }
       }
-    } else {
-      setIsFav(true);
     }
   }
 

@@ -1,0 +1,12 @@
+export const GET_MOVIES = "GET_MOVIES";
+export const GET_GENRE = "GET_GENRE";
+export const GET_UPCOMING = "GET_UPCOMING";
+export const GET_NOWPLAYING = "GET_NOWPLAYING";
+export const GET_SIMILAR = "GET_SIMILAR";
+export const GET_SEARCH = "GET_SEARCH";
+export const GET_MOVIE_BY_ID = "GET_MOVIE_BY_ID";
+export const GET_MOVIES_BY_GENRE = "GET_MOVIES_BY_GENRE";
+export const SORT_MOVIES = "SORT_MOVIES";
+export const CLEAR_SEARCH = "CLEAR_SEARCH";
+export const CLEAR_MOVIES = "CLEAR_MOVIES";
+export const CLEAR_SORT_MOVIES = "CLEAR_SORT_MOVIES";

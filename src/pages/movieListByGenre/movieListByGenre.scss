@@ -1,0 +1,50 @@
+
+.genre {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    position: absolute;
+    background: linear-gradient(180deg, #f72585 -100%, black 61.43%);
+    &-sidebar {
+        position: fixed;
+        width: 40px;
+        z-index: 1;
+    }
+    &-page {
+
+        &-name {
+            position: relative;
+            top: 11vw;
+            left: 40px;
+            size: 34px;
+            color: #FFFFFF;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            height: 10vh;
+            align-items: center;
+            width: 100%;
+            font-family: 'Urbanist';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        &-movie {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            top: 20vw;
+            justify-content: center;
+            width: 98vw;
+            left: 40px;
+        }
+
+    }
+}

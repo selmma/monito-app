@@ -1,0 +1,86 @@
+
+.filter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    background: linear-gradient(180deg, #f72585 -100%, black 61.43%);
+    &-page {
+        height: 100vh;
+        margin-left: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        overflow-y: hidden;
+        &-row {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            &-select {
+                width: 16vw;
+                height: 5vh;
+                background: #4361EE;
+                border-radius: 100px;
+                padding: 5px;
+                color: white;
+                opacity: 0.7;
+                margin-left: 25px;
+                overflow-x: hidden;
+
+                &-option {
+                    height: 40px;
+                    color: #f72585;
+                    background-color: #4361EE;
+                }
+            }
+            &-txt {
+                width: 100vw;
+                display: flex;
+                height: 3vh;
+                justify-content: flex-start;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                left: 3vw;
+                line-height: 19px;
+                color: white;
+                position: relative;
+            }
+            &-input {
+                width: 16vw;
+                height: 5vh;
+                border-radius: 100px;
+                padding: 5px;
+                color: white;
+                opacity: 0.7;
+                background: #4361EE;
+                margin-left: 25px;
+                overflow-x: hidden;
+            }
+        }
+        &-movies {
+            display: flex;
+            flex-direction: row;
+            max-width: 2000px;
+            width: 100%;
+            overflow: visible;
+
+            &-column {
+                display: flex;
+                width: 40vw;
+            }
+        }
+    }
+    &-sidebar {
+        position: fixed;
+        width: 40px;
+        z-index: 1;
+    }
+}

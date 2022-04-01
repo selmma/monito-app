@@ -1,0 +1,43 @@
+.wrapper {
+    position: fixed;
+    &-bottom {
+        &-arrows {
+           color: white;
+           position: fixed;
+           justify-content: space-between;
+           display: flex;
+           width: 80vw;
+           left: 10vw;
+           top: 10vw;
+        }
+        &-details {
+            &-title {
+                color: white;
+                font-size: 45px;
+                height: 30px;
+                position: fixed;
+                left: 15vh;
+                top: 20vh;
+            }
+            &-desc {
+                color: white;
+                top: 27vh;
+                left: 15vh;
+                max-width: 55vw;
+                position: fixed;
+                font-size: 15px;
+
+            }
+            &-buttons {
+                top: 28vh;
+                position: relative;
+                left: 70vw;
+                background: white;
+                opacity: 0.6;
+                width: 33px;
+                height: 33px;
+                border-radius: 50px;
+            }
+        }
+    }
+}

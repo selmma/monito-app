@@ -41,6 +41,20 @@
             position: relative;
             top: 10vh;
         }
+        &-button {
+            position: relative;
+            left: 80vw;
+            top: 10vh;
+            width: 15vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border-color: white;
+            background: white;
+            opacity: 0.8;
+        }
     }
 
     &-sidebar {

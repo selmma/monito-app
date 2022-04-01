@@ -33,7 +33,7 @@ const FilterMovies = () => {
       <div className="filter-page">
         <div className="filter-page-row">
           <div className="filter-page-row-txt">
-            Hm witch year do you wanna check?
+            Hm which year do you wanna check?
           </div>
           <select
             onChange={handleSelectChange}
@@ -65,7 +65,7 @@ const FilterMovies = () => {
         </div>
 
         <div className="filter-page-row">
-          <div className="filter-page-row-txt">And witch movie rating</div>
+          <div className="filter-page-row-txt">And which movie rating</div>
           <input
             className="filter-page-row-input"
             placeholder="Filter by number of votes"

@@ -33,5 +33,21 @@ function addMovieToStorage(
   localStorage.setItem(storageName, JSON.stringify(favMovies));
   console.log("Item saved to local storage by name: " + storageName);
 }
+export const removeItemFromStorage = (movieID: number) => {
+  const favMovies: any[] = JSON.parse(localStorage.getItem(FAV_MOVIES) || "[]");
+  const favMoviesString = JSON.stringify(favMovies);
+  if (favMoviesString !== '[]') {
+    for (var i = 0; i < favMovies.length; i++) {
+      const favFiltered = favMovies.filter((item: MovieModel) => item.id !== movieID);
+      console.log(favFiltered);
+      localStorage.clear();
+      localStorage.setItem(FAV_MOVIES, JSON.stringify(favFiltered));
+    }
+  }
+}
+
+export const clearAllItemsFromLocalStorage = () => {
+  localStorage.clear();
+}
 
 export const FAV_MOVIES = "fav_movies";

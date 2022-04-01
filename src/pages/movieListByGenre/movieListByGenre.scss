@@ -18,20 +18,20 @@
 
         &-name {
             position: relative;
-            top: 11vw;
-            left: 40px;
+            top: 8vw;
+            margin-left: 50px;
             size: 34px;
             color: #FFFFFF;
             display: flex;
             align-content: center;
-            justify-content: center;
+            justify-content: flex-start;
             height: 10vh;
             align-items: center;
             width: 100%;
             font-family: 'Urbanist';
             font-style: normal;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 50px;
             text-transform: capitalize;
         }
         &-movie {
@@ -40,7 +40,7 @@
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
-            top: 20vw;
+            top: 10vw;
             justify-content: center;
             width: 98vw;
             left: 40px;
